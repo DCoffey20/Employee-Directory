@@ -2,21 +2,22 @@ import React from "react";
 import "./style.css";
 
   function Card(props) {
+    // console.log(props);
     return (
       <div className="card">
         <div className="img-container">
-          <img alt={props.name} src={props.image} />
+          <img alt={props.userName} src={props.image} />
         </div>
         <div className="content">
           <ul>
             <li>
-              <strong>Name:</strong> {props.name}
+              <strong>Gender:</strong> {props.gender}
             </li>
             <li>
-              <strong>Occupation:</strong> {props.occupation}
+              <strong>Name:</strong> {props.firstName} {props.lastName}
             </li>
             <li>
-              <strong>Location:</strong> {props.location}
+              <strong>Email:</strong> {props.email}
             </li>
           </ul>
         </div>

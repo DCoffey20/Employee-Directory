@@ -1,0 +1,21 @@
+import React from "react";
+
+function SearchForm(props) {
+  return (
+    <form>
+      <div className="form-group">
+        <label htmlFor="search">Search:</label>
+        <input
+          onChange={props.nameSearch}
+          name="search"
+          type="text"
+          className="form-control"
+          placeholder="Search For an Employee"
+          id="search"
+        />
+      </div>
+    </form>
+  );
+}
+
+export default SearchForm;
